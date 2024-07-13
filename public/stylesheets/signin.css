@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+    color: #151509;
+    font-family: 'quicksand';
+    font-weight: 600;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    margin: 90px auto;
+    width: fit-content;
+    background-color: #ffffff9d;
+    padding: 60px;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.logo span {
+    font-family: 'yeseva one';
+
+}
+
+.form-container input {
+    background: #ffd7a5d4;
+    border: none;
+    padding: 10px 15px;
+    width: 220px;
+    margin-top: 10px;
+    color: #000000;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.form-container #submit {
+    background: #0c7300;
+    border: none;
+    padding: 10px 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: #ffffff;
+    transition: 0.5s;
+    font-size: 17px;
+    font-family: 'quicksand';
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-container input:hover {
+    background: #000000aa;
+    color: #fff;
+}
+
+.form-container i {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+
+    .form-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 60px;
+        margin: 40px auto;
+    }
+
+}
+
+.footer {
+    text-align: center;
+    margin: 30px auto;
+}

@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+    color: #151509;
+    font-family: 'quicksand';
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 40px;
+    background-color: #22221199;
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+}
+
+.header-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    font-family: 'yeseva one';
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    background: #ffaf0f;
+    font-weight: 800;
+    border-radius: 20px;
+
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar a {
+    font-family: 'quicksand';
+    text-decoration: none;
+    color: #fff;
+}
+
+.header i {
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .header ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header {
+
+        margin-left: 30px;
+        gap: 3rem;
+        padding: 10px 2rem;
+    }
+
+    .header h3 {
+        font-size: 15px;
+    }
+
+    .header-logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+        gap: 7px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .header {
+        gap: 2rem;
+    }
+
+}
+
+/*homepage, add-candidate, add-election*/
+
+.election-table-container {
+    margin: 60px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.table {
+    background: #ffffffaa;
+    border-collapse: collapse;
+    border: 1px solid #004991;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 0 20px #00000055;
+}
+
+.table td {
+    padding: 10px;
+    border: 1px solid #004991;
+}
+
+.table th {
+    padding: 10px;
+    border: 1px solid #004991;
+    background: #ffa48b55;
+}
+
+.add-election-container {
+    margin: 60px auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.add-election-form {
+    margin: 10px auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff99;
+    padding: 20px 40px;
+    box-shadow: 0 0 20px #00000055;
+}
+
+.add-election-form input,
+.add-election-form .select-topic {
+    background: #ffd7a5d4;
+    border: none;
+    padding: 10px 15px;
+    width: 220px;
+    margin-top: 10px;
+    color: #000000;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.add-election-form #submit {
+    background: #0c7300;
+    border: none;
+    padding: 10px 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: #ffffff;
+    transition: 0.5s;
+    font-size: 17px;
+    font-family: 'quicksand';
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-election-form #submit:hover {
+    background-color: #0c9900;
+}
+
+.add-election-form input:hover {
+    background: #000000aa;
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    font-family: 'quicksand';
+    font-weight: 600;
+
+}
+
+.deletecandidate {
+    font-weight: 500;
+    background-color: #f00;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'quicksand';
+}
+
+.deletecandidate:hover {
+    background-color: rgb(255, 53, 22);
+}
+
+.candidate_photo {
+    width: 200px;
+}
+
+#contact {
+    display: none;
+    background-color: #00000066;
+    border-radius: 10px;
+    margin: 0 auto 60px;
+    justify-self: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 0 10px #000000bb;
+}
+
+/*voter home*/
+
+.votebutton {
+    background: #109e00;
+    border: none;
+    padding: 15px 15px;
+    width: 150px;
+    color: #ffffff;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: 'quicksand';
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.votebutton:hover {
+    background-color: #0fb400;
+}
+
+.footer {
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+}
